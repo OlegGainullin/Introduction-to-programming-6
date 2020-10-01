@@ -11,6 +11,6 @@ int main()
     a1 = a*a;
     a = a1*a1;
     a1 = a*a;
-    printf("y = %g \n", a1);
+    printf("A^8 = %g \n", a1);
     return 0;
 }
