@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+int main()
+{
+    char *locale = setlocale(LC_ALL, "");
+    float a = 0;
+    float a3 = 0;
+    float a2 = 0;
+    printf("Введите A: ");
+    scanf("%e", &a);
+    a2 = a*a;
+    a3 = a2*a;
+    a = a2*a3;
+    a2 = a*a;
+    a = a*a2;
+    printf("A^15 = %g \n", a);
+    return 0;
+}
