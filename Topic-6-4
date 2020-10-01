@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+int main()
+{
+    char *locale = setlocale(LC_ALL, "");
+    float x = 0;
+    printf("Введите x: ");
+    scanf("%e", &x);
+    float y = 3*(x*x*x*x*x*x)-6*x*x-7;
+    printf("y = %g \n", y);
+    return 0;
+}
